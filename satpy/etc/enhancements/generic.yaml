@@ -785,7 +785,16 @@ enhancements:
         method: !!python/name:satpy.enhancements.colorize
         kwargs:
           palettes:
-            - {colors: greys, min_value: 185.15, max_value: 318.15}
+            - {colors: greys, min_value: 180.15, max_value: 313.15}
+
+  bi_ir_clouds:
+    standard_name: bi_ir_clouds
+    operations:
+      - name: colorize
+        method: !!python/name:satpy.enhancements.colorize
+        kwargs:
+          palettes:
+            - {colors: rdbu, min_value: 183.15, max_value: 303.15}
 
   vis_sharpened_ir:
     standard_name: vis_sharpened_ir

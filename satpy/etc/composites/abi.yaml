@@ -173,6 +173,12 @@ composites:
     prerequisites:
       - name: C13
     standard_name: grey_ir_clouds
+  
+  bi_ir_clouds:
+    compositor: !!python/name:satpy.composites.SingleBandCompositor
+    prerequisites:
+      - name: C13
+    standard_name: bi_ir_clouds
 
   airmass:
     compositor: !!python/name:satpy.composites.GenericCompositor

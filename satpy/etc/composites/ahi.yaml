@@ -264,6 +264,18 @@ composites:
       - name: B13
     standard_name: colorized_ir_clouds
 
+  grey_ir_clouds:
+    compositor: !!python/name:satpy.composites.SingleBandCompositor
+    prerequisites:
+      - name: B13
+    standard_name: grey_ir_clouds
+  
+  bi_ir_clouds:
+    compositor: !!python/name:satpy.composites.SingleBandCompositor
+    prerequisites:
+      - name: B13
+    standard_name: bi_ir_clouds
+
   water_vapors1:
     compositor: !!python/name:satpy.composites.GenericCompositor
     prerequisites:
